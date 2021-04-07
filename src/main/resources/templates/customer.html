@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<body>
+<h2>Add Customer Form</h2>
+<form action="#" th:action="@{/customer}" th:object="${customer}" method="post">
+<table>
+    <tr>
+		<td> Customer Id : </td>
+		<td> <input type="text" th:field="*{id}" /> </td>
+	</tr>
+	<tr>
+		<td> Customer Name : </td>
+		<td> <input type="text" th:field="*{customerName}" /> </td>
+	</tr>
+	<tr>
+		<td> Phone Number : </td>
+		<td> <input type="text" th:field="*{phoneNumber}" /> </td>
+	</tr>
+	<tr>
+		<td> &nbsp; </td>
+		<td> <input type="submit" value="ADD" /> </td>
+	</tr>
+	<tr>
+		<td> &nbsp; </td>
+		<td> <input type="reset" value="Reset" /></td>
+	</tr>
+</table>
+</form>
+
+</body>
+</body>
+</html>
